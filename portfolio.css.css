@@ -1,0 +1,358 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: rgba(240, 240, 240,0.9);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+
+.header-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    font-size: 40px;
+    font-family: 'Cascadia Code';
+    padding: 15px;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-list{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    margin:0;
+    padding: 0;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Cascadia Code';
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+
+.top {
+    height: 980px;
+    text-align: center;
+    background-image:url(topimg.jpg);
+    background-size: cover;
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+
+.profile-img-wrap {
+    margin: 0 auto 40px;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.top img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+    object-fit: cover;
+}
+
+.top-tittle{
+    font-size: 100px ;
+    font-family: 'Cascadia Code';
+    margin-bottom: 10px;
+    letter-spacing: -5px;
+}
+
+.top-text{
+    font-size: 50px;
+    font-family: 'Cascadia Code';
+    margin-bottom: 50px;
+}
+
+.top-btn a{
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-family: 'Cascadia Code';
+    background-color: #f0f0f0;
+    border: none;
+    color: #000;
+    border-radius: 10px;
+    
+}
+
+.top-btn{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    transform: scale(3);
+}
+
+.social-icons a{
+    color: #000;
+    text-decoration: none;
+}
+
+.top-btn a:hover,.nav-list a:hover{
+    background-color: #e0e0e0;
+}
+
+.about{
+    min-height: 920px;
+    background-color: rgba(240, 240, 240,0.9);
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 80px;
+    font-family: 'Cascadia Code';
+    text-align: center;
+    margin: 0 0 60px;    
+}
+
+
+.about-container,
+.skill-content,
+.works-container,
+.pricing-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-content{
+    display: flex;
+    gap: 100px;
+    padding: 60px 0;
+    align-items: center;
+}
+
+
+.about-container img{
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.about-section{
+    flex: 1;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.about-section span{
+    font-size: 30px;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+}
+
+.skill{
+    background-color: white;
+    padding: 100px 0 70px;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.skill-item h3{
+    font-size: 40px;
+    font-family: 'Cascadia Code';
+    margin-bottom: 20px;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #333;
+}
+
+.skill-content{
+    display:flex;
+    gap: 30px;
+    margin-bottom:30px
+}
+
+.skills{
+    flex: 1;
+    box-sizing: border-box;
+    border: #f0f0f0 solid 7px;
+    border-radius: 20px;
+}
+
+.skill-item{
+    padding: 20px;
+}
+
+.skill-item p{
+    font-size: 20px;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+.skill-item span{
+    float: right;
+}
+
+.works{
+    background-color: rgba(240, 240, 240,0.9);
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.works-container{
+    display: flex;
+    gap: 30px;
+}
+
+.work-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 260px;
+    display: block;
+}
+
+.work-item{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.work-item h3{
+    font-size: 30px;
+    font-family: 'Cascadia Code';
+}
+
+.pricing{
+    background-color: white;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.pricing-content{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+.pricing-item{
+    flex: 1;
+    padding: 20px 20px;
+}
+
+.pricing-item h3{
+    font-size: 38px;
+    font-family: 'Cascadia Code';
+    margin-bottom: 20px;
+}
+
+.pricing-item p{
+    font-size: 20px;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+.pricing-description{
+    font-size: 35px;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    margin:0 0 0 0;
+}
+
+.contact-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.contact{
+    background-color: rgba(240, 240, 240,0.9);
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.contact-container{
+    align-items: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group{
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input{
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea{
+    flex: 1;
+    padding-bottom: 300px;
+    font-size: 20px;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contact-form button{
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contact-container p{
+    font-size: 20px;
+    font-family: 'Cascadia Code', 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
